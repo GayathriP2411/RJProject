@@ -1,0 +1,59 @@
+.parent{
+    display: flex;
+    width: 100px;
+    padding: 2%;
+    margin: 3%;
+    flex-wrap: wrap;
+}
+.parent>.card{
+    width: auto;
+    border: 3px solid black;
+    padding: 3%;
+    margin: 1%;
+    text-align: center;
+    height: fit-content;
+}
+button{
+    color: blue;
+    width: 60px;
+}
+img{
+    width: 150px;
+}
+
+/* mobile devices 320px to 480px
+tablet 481px to 768px
+min desktop 769px to 1024
+large desktop 1025px to 1200px */
+
+/* @media only screen and (min-width:320px) and (max-width:480px) */
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+   .parent{
+       display: flex;
+       flex-direction: column;
+   }
+   .parent>.card{
+       width: 90%;
+   }
+}
+/* @media only screen and (min-width:769px) and (max-width:1024px) */
+/* {
+   .parent{
+       display: flex;
+       flex-direction: column;
+   }
+   .parent>.card{
+       width: 90%;
+   }
+} */
+/* @media only screen and (min-width:1025px) and (max-width:1200px)
+{
+   .parent{
+       display: flex;
+       flex-direction: column;
+   }
+   .parent>.card{
+       width: 90%;
+   }
+} */
